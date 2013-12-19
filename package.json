@@ -1,6 +1,6 @@
 {
   "name": "bestfit",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Finds image rendition that best fits a given container.",
   "main": "bestfit.js",
   "scripts": {
@@ -22,7 +22,13 @@
     "nave": "~0.4.3",
     "tape": "~2.3.2"
   },
-  "keywords": [ "fit", "image", "viewport", "rendition", "renditions" ],
+  "keywords": [
+    "fit",
+    "image",
+    "viewport",
+    "rendition",
+    "renditions"
+  ],
   "author": {
     "name": "Thorsten Lorenz",
     "email": "thlorenz@gmx.de",
