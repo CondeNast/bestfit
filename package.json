@@ -2,9 +2,9 @@
   "name": "bestfit",
   "version": "0.1.0",
   "description": "Finds image rendition that best fits a given container.",
-  "main": "index.js",
+  "main": "bestfit.js",
   "scripts": {
-    "test-main": "tape test/*.js",
+    "test-main": "set -e; for t in test/*.js; do node $t; done",
     "test-0.8": "nave use 0.8 npm run test-main",
     "test-0.10": "nave use 0.10 npm run test-main",
     "test-all": "npm run test-main && npm run test-0.8 && npm run test-0.10",
