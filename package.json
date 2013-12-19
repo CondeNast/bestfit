@@ -22,7 +22,7 @@
     "nave": "~0.4.3",
     "tape": "~2.3.2"
   },
-  "keywords": [],
+  "keywords": [ "fit", "image", "viewport", "rendition", "renditions" ],
   "author": {
     "name": "Thorsten Lorenz",
     "email": "thlorenz@gmx.de",
