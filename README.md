@@ -1,4 +1,4 @@
-# bestfit [![build status](https://secure.travis-ci.org/thlorenz/bestfit.png)](http://travis-ci.org/thlorenz/bestfit)
+# bestfit [![build status](https://secure.travis-ci.org/CondeNast/bestfit.png)](http://travis-ci.org/CondeNast/bestfit)
 
 [![testling badge](https://ci.testling.com/CondeNast/bestfit.png)](https://ci.testling.com/CondeNast/bestfit)
 
