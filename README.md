@@ -78,9 +78,9 @@ over images that are too small.</p>
 <dt class="tag-source">Source:</dt>
 <dd class="tag-source"><ul class="dummy">
 <li>
-<a href="https://github.com/CondeNast/bestfit/blob/master/index.js">index.js</a>
+<a href="https://github.com/CondeNast/bestfit/blob/master/bestfit.js">bestfit.js</a>
 <span>, </span>
-<a href="https://github.com/CondeNast/bestfit/blob/master/index.js#L34">lineno 34</a>
+<a href="https://github.com/CondeNast/bestfit/blob/master/bestfit.js#L34">lineno 34</a>
 </li>
 </ul></dd>
 </dl>
