@@ -1,6 +1,6 @@
 {
   "name": "bestfit",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Finds image rendition that best fits a given container.",
   "main": "bestfit.js",
   "scripts": {
