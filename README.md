@@ -1,5 +1,7 @@
 # bestfit [![build status](https://secure.travis-ci.org/thlorenz/bestfit.png)](http://travis-ci.org/thlorenz/bestfit)
 
+[![testling badge](https://ci.testling.com/CondeNast/bestfit.png)](https://ci.testling.com/CondeNast/bestfit)
+
 Finds image rendition that best fits a given container.
 
 ```js
