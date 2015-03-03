@@ -40,10 +40,14 @@ var go = module.exports =
  * @name bestfit
  * @function
  * @param {Array.<Object>} renditions available image renditions each having a width and height property
+ * @param {Object} options - options used to override default settings
+ * @property {boolean} options.widthAndHeight - If true, width and height percentage are used for filtering renditions. If false, the width OR the height percentage are used for filtering images
  * @return {Function(Number, Number)} when called with available width and height it returns the best fitting rendition
  */
-function bestfit(renditions) {
+function bestfit(renditions, options) {
   return function (width, height) {
+    var _defaults = { widthAndHeight: true };
+    var _opts = xtend(_defaults, options);
 
     function attachPercent(r) {
       var wp = percentage(width, r.width); 
@@ -52,7 +56,13 @@ function bestfit(renditions) {
     }
 
     var perc = renditions.map(attachPercent);
-    var larger = perc.filter(function (x) { return x.widthPercentage >= 1 && x.heightPercentage >= 1 });
+    var larger = perc.filter(function (x) {
+      if (_opts.widthAndHeight) {
+        return x.widthPercentage >= 1 && x.heightPercentage >= 1;
+      } else {
+        return x.widthPercentage >= 1 || x.heightPercentage >= 1;
+      }
+    });
     var smaller = perc.filter(function (x) { return x.widthPercentage < 1 || x.heightPercentage < 1 });
 
     return larger.length ? closestLarger(larger) : closestSmaller(smaller);
